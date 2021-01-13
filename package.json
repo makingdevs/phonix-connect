@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "amazon-connect-streams": "^1.6.1"
+  }
+}
