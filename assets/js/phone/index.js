@@ -39,6 +39,15 @@ var attr = document.getElementById("attr");
 
 connect.contact(function(contact) {
   contact.onConnected(function(contact) {
+    $.get("/users/api/100734")
+    .done(function({user:user}) {
+      $("#nameClient").text(user.name);
+      $("#numberClient").text(user.number_client);
+      $("#phone").text(user.phone);
+    })
+    .fail(function() {
+      console.log("error");
+    });
     attr.textContent=contact.getAttributes().algodon.name;
     stateContact.textContent=contact.getState().type;
     number.textContent=contact.getConnections()[1].getEndpoint().phoneNumber;
