@@ -1,17 +1,22 @@
 <div class="row">
   <div class="">
-    <h1>Telefono</h1>
+    <h1>SoftPhone</h1>
     <div id="container-div" style="width: 300px;height: 500px;"></div>
   </div>
   <div class="">
-    <h1>Agente</h1>
+    <h1>Agent</h1>
     <h3>Name: <span id="name"></span></h3>
     <h3>State: <span id="state"></span></h3>
     <br/>
-    <h1>Contacto</h1>
+    <h1>Contact</h1>
     <h3>Number: <span id="number"></span></h3>
     <h3>State Contact: <span id="stateContact"></span></h3>
     <h3>Attributes: <span id="attr"></span></h3>
+    <br/>
+    <h1>Client</h1>
+    <h3>Name: <span id="nameClient"></span></h3>
+    <h3>Number of client: <span id="numberClient"></span></h3>
+    <h3>Phone: <span id="phone"></span></h3>
   </div>
 </div>
 <script src="<%= Routes.static_path(@conn, "/js/phone.js") %>"></script>
